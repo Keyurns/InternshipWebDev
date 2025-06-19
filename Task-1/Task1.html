@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Task 1 Introduction</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- About Me -->
+    <section class="card">
+      <h1>About Me</h1>
+      <p>I'm Keyur 
+        I am passionate about learning new skills, gaining hands-on experience, and exploring practical applications of my coursework.</p>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="card">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Watching F1</li>
+        <li>Playing badminton</li>
+        <li>Coding and building websites</li>
+        <li>Listening to music</li>
+        <li>Photography</li>
+      </ul>
+    </section>
+
+    <section class="card image-section">
+      <h2>My Picture</h2>
+      <img src="exp.jpg" alt="exp image" />
+      <button id="bt">Click me</button>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("bt").addEventListener("click", () => {
+      alert("You clicked the button.");
+    });
+  </script>
+
+</body>
+</html>
