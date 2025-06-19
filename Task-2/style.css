@@ -92,14 +92,14 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border-color: #6C63FF;
+  border-color: #180747;
   outline: none;
 }
 
 /* Buttons */
 button {
   padding: 0.9rem;
-  background: linear-gradient(to right, #6C63FF, #5A55D1);
+  background: linear-gradient(to right, #180747, #5A55D1);
   color: white;
   font-weight: 600;
   border: none;
@@ -111,11 +111,11 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(to right, #5A55D1, #6C63FF);
+  background: linear-gradient(to right, #5A55D1, #180747);
   transform: translateY(-2px);
 }
 
-/* Todo form row */
+/* Expense form row */
 #contactForm {
   display: flex;
   flex-direction: row;
@@ -128,7 +128,7 @@ button:hover {
   min-width: 0;
 }
 
-/* Todo List Items */
+/* Expense List Items */
 #contactList {
   margin-top: 1rem;
   list-style: none;
