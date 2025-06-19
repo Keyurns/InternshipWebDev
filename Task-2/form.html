@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Expense Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <h1>Expense Tracker</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Add Expense</a></li>
+        <li><a href="#">View Expense</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="grid-layout">
+      <!-- Contact Form -->
+      <section class="form-section">
+        <h2>Add Expense</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Contact:</label>
+          <textarea id="contact" name="contact" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+        <p id="formMsg"></p>
+      </section>
+
+        <!-- Todo List -->
+         
+      <section class="Expense-section">
+        <h2>Expense List</h2>
+        <form id="todoForm">
+          <input type="text" id="todoInput" placeholder="Enter a Expense" required />
+          <button type="submit">Add Expense</button>
+        </form>
+        <ul id="todoList"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
