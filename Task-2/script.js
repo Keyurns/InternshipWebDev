@@ -27,17 +27,17 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 });
 
 // Todo List
-const todoForm = document.getElementById('todoForm');
-const todoInput = document.getElementById('todoInput');
-const todoList = document.getElementById('todoList');
+const ExpenseForm = document.getElementById('ExpenseForm');
+const ExpenseInput = document.getElementById('ExpenseInput');
+const ExpenseList = document.getElementById('ExpenseList');
 
-todoForm.addEventListener('submit', function (e) {
+ExpenseForm.addEventListener('submit', function (e) {
   e.preventDefault();
-  const task = todoInput.value.trim();
+  const task = ExpenseInput.value.trim();
   if (task === '') return;
 
   const li = document.createElement('li');
   li.innerHTML = `${task} <button onclick="this.parentElement.remove()">Delete</button>`;
-  todoList.appendChild(li);
-  todoInput.value = '';
+  ExpenseList.appendChild(li);
+  ExpenseInput.value = '';
 });
