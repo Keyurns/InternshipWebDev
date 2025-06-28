@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz & Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Web App For Weather and Quiz</h1>
+      <p class="subtitle">Responsive Layout | Fun Quiz | Live Weather</p>
+    </header>
+
+    <main>
+      <!-- Quiz Section -->
+      <section class="card" id="quiz-container">
+        <h2> Quick Quiz</h2>
+        <p id="question" class="question"></p>
+        <ul id="options" class="options"></ul>
+        <button onclick="nextQuestion()" id="nextBtn">Next Question</button>
+      </section>
+
+      <!-- Weather Section -->
+      <section class="card">
+        <h2>Check Weather</h2>
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button onclick="getWeather()">Get Weather</button>
+        <p id="Weather">Weather info will appear here.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Enjoy the Weather and the Quiz</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
