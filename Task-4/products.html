@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyur Sonawane Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Keyur Sonawane</h1>
+    <p>Computer Science and Engineering | Web Developer</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="expense.html">Expense Tracker</a></li>
+        <li><a href="products.html">Product List</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="products">
+    <h2>Product Listing</h2>
+    <div class="filters">
+      <select id="categoryFilter" onchange="filterProducts()">
+        <option value="all">All</option>
+        <option value="tech">Tech</option>
+        <option value="books">Books</option>
+      </select>
+
+      <select id="sortFilter" onchange="sortProducts()">
+        <option value="rating">Sort by Rating</option>
+        <option value="price">Sort by Price</option>
+      </select>
+    </div>
+    <div id="product-list"></div>
+  </section>
+
+  <footer>
+    <p>Keyur Sonawane | Computer Science and Engineering</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
